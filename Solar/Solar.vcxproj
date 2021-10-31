@@ -19,12 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Solar\Log.h" />
     <ClInclude Include="src\Solar.h" />
     <ClInclude Include="src\Solar\Application.h" />
     <ClInclude Include="src\Solar\Core.h" />
     <ClInclude Include="src\Solar\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Solar\Log.cpp" />
     <ClCompile Include="src\Solar\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -129,8 +131,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SL_PALTFORM_WINDOWS;SL_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Solar\vender\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,8 +146,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SL_PALTFORM_WINDOWS;SL_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Solar\vender\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
